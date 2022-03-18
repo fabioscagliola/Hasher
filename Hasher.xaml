@@ -1,0 +1,23 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+    x:Class="com.fabioscagliola.Hasher.MainWindow"
+    Height="450"
+    Width="800"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    Background="#FF2D2D30"
+>
+    <Grid>
+        <dxlc:LayoutControl Orientation="Vertical">
+            <dxlc:LayoutItem LabelVerticalAlignment="Top" Label="String" Foreground="White">
+                <dxe:TextEdit x:Name="Source" AcceptsReturn="True" FontFamily="Consolas" Height="190" TextWrapping="Wrap" VerticalContentAlignment="Top" EditValueChanged="Source_EditValueChanged" Background="Black" Foreground="Lime" />
+            </dxlc:LayoutItem>
+            <dxlc:LayoutItem LabelVerticalAlignment="Top" Label="Hash" Foreground="White">
+                <dxe:TextEdit x:Name="Target" AcceptsReturn="True" FontFamily="Consolas" Height="190" TextWrapping="Wrap" VerticalContentAlignment="Top" IsReadOnly="True" Background="Black" Foreground="Lime" />
+            </dxlc:LayoutItem>
+        </dxlc:LayoutControl>
+    </Grid>
+</Window>
